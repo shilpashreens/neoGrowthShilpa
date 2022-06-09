@@ -1,40 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-05-07T18:49:50 IST" name="Default suite" finished-at="2022-05-07T18:50:01 IST" duration-ms="11680">
+  <suite name="Default suite" duration-ms="23251" started-at="2022-06-08T13:19:55 IST" finished-at="2022-06-08T13:20:18 IST">
     <groups>
     </groups>
-    <test started-at="2022-05-07T18:49:50 IST" name="Default test" finished-at="2022-05-07T18:50:01 IST" duration-ms="11680">
-      <class name="testing.ValidationEmail_form">
-        <test-method is-config="true" signature="setupReport()[pri:0, instance:testing.ValidationEmail_form@21e360a]" started-at="2022-05-07T18:49:49 IST" name="setupReport" finished-at="2022-05-07T18:49:50 IST" duration-ms="147" status="PASS">
+    <test name="Default test" duration-ms="23251" started-at="2022-06-08T13:19:55 IST" finished-at="2022-06-08T13:20:18 IST">
+      <class name="testing.ValidationMobileNum_form">
+        <test-method status="PASS" signature="setupReport()[pri:0, instance:testing.ValidationMobileNum_form@2d8f65a4]" name="setupReport" is-config="true" duration-ms="111" started-at="2022-06-08T13:19:54 IST" finished-at="2022-06-08T13:19:55 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupReport -->
-        <test-method is-config="true" signature="chooseBrowser()[pri:0, instance:testing.ValidationEmail_form@21e360a]" started-at="2022-05-07T18:49:50 IST" name="chooseBrowser" finished-at="2022-05-07T18:49:57 IST" duration-ms="6909" status="PASS">
+        <test-method status="PASS" signature="chooseBrowser()[pri:0, instance:testing.ValidationMobileNum_form@2d8f65a4]" name="chooseBrowser" is-config="true" duration-ms="13264" started-at="2022-06-08T13:19:55 IST" finished-at="2022-06-08T13:20:08 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- chooseBrowser -->
-        <test-method signature="validateEmail()[pri:0, instance:testing.ValidationEmail_form@21e360a]" started-at="2022-05-07T18:49:57 IST" name="validateEmail" finished-at="2022-05-07T18:50:01 IST" duration-ms="4720" status="PASS">
+        <test-method status="PASS" signature="validMobileNum()[pri:0, instance:testing.ValidationMobileNum_form@2d8f65a4]" name="validMobileNum" duration-ms="9952" started-at="2022-06-08T13:20:08 IST" finished-at="2022-06-08T13:20:18 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateEmail -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:testing.ValidationEmail_form@21e360a]" started-at="2022-05-07T18:50:01 IST" name="getResult" finished-at="2022-05-07T18:50:01 IST" duration-ms="9" status="PASS">
+        </test-method> <!-- validMobileNum -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:testing.ValidationMobileNum_form@2d8f65a4]" name="getResult" is-config="true" duration-ms="4" started-at="2022-06-08T13:20:18 IST" finished-at="2022-06-08T13:20:18 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=validateEmail status=SUCCESS method=ValidationEmail_form.validateEmail()[pri:0, instance:testing.ValidationEmail_form@21e360a] output={null}]]]>
+                <![CDATA[[TestResult name=validMobileNum status=SUCCESS method=ValidationMobileNum_form.validMobileNum()[pri:0, instance:testing.ValidationMobileNum_form@2d8f65a4] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="teardownReport()[pri:0, instance:testing.ValidationEmail_form@21e360a]" started-at="2022-05-07T18:50:01 IST" name="teardownReport" finished-at="2022-05-07T18:50:02 IST" duration-ms="239" status="PASS">
+        <test-method status="PASS" signature="teardownReport()[pri:0, instance:testing.ValidationMobileNum_form@2d8f65a4]" name="teardownReport" is-config="true" duration-ms="260" started-at="2022-06-08T13:20:18 IST" finished-at="2022-06-08T13:20:18 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownReport -->
-      </class> <!-- testing.ValidationEmail_form -->
+      </class> <!-- testing.ValidationMobileNum_form -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -4,6 +4,7 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import genricLibrary.BaseTest;
+import genricLibrary.CustomWait;
 import genricLibrary.FileLib;
 import webPOM.FormPage;
 
@@ -19,7 +20,13 @@ public class ValidationEmail_form extends BaseTest
 		FormPage formpage=new FormPage(driverWeb);
 		
 		FileLib flib=new FileLib();
+		CustomWait wait=new CustomWait();
+		wait.visibilityOf_InWeb(formpage.accept(), 60);
+		
+		formpage.accept().click();
+		Thread.sleep(3000);
 		formpage.email().sendKeys(flib.getKeyPropertyvalue(PROP_PATH, "email"));
+		
 		formpage.submit().click();
 		
 		try {

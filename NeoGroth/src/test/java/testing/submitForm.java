@@ -28,6 +28,7 @@ public class submitForm extends BaseTest
 		FileLib flib=new FileLib();
 		WebComLib webcom=new WebComLib();
 	
+		formpage.accept().click();
 		formpage.getfullName().sendKeys(flib.getCellValue(EXCEL_PATH, "Sheet1", 2, 1));
 		Thread.sleep(2000);
 		
