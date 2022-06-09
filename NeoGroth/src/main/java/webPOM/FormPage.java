@@ -27,6 +27,13 @@ public class FormPage
 		
 	}
 	
+	@FindBy(xpath = "//a[@id='cn-accept-cookie']")
+	private WebElement accept;
+	public WebElement accept() 
+	{
+		return accept;
+		
+	}
 	
 	@FindBy(xpath = "//form[@id='crm-form']//input[@id='email1']")
 	private WebElement email;

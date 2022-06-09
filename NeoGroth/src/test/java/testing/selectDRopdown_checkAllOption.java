@@ -25,6 +25,7 @@ public class selectDRopdown_checkAllOption extends BaseTest
 		
 		FileLib flib=new FileLib();
 		WebComLib webcom=new WebComLib();
+		formpage.accept().click();
 		formpage.selectDDBE().click();
 		Thread.sleep(2000);
 		

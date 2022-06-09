@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import genricLibrary.BaseTest;
+import genricLibrary.CustomWait;
 import genricLibrary.FileLib;
 import okio.Timeout;
 import webPOM.FormPage;
@@ -22,7 +23,12 @@ public class ValidationMobileNum_form extends BaseTest
 		FormPage formpage=new FormPage(driverWeb);
 		
 		FileLib flib=new FileLib();
+		CustomWait wait=new CustomWait();
+		wait.visibilityOf_InWeb(formpage.accept(), 60);
+		formpage.accept().click();
+		Thread.sleep(3000);
 		formpage.phnum().sendKeys(flib.getKeyPropertyvalue(PROP_PATH, "PhoneNum"));
+		wait.visibilityOf_InWeb(formpage.submit(), 30);
 		formpage.submit().click();
 		
 		try {
